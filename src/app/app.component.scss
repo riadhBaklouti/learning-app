@@ -1,0 +1,28 @@
+$menu-width: 330px;
+.side-menu {
+  height: inherit;
+  width: $menu-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+}
+
+.app-content {
+  height: inherit;
+  width: calc(100% - $menu-width);
+  margin-left: $menu-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+}
+
+.app-header {
+  height: 70px;
+  width: 100%;
+  background-color: green;
+}
+
