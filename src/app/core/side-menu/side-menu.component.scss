@@ -1,7 +1,6 @@
 @import "../../../style/color";
 .side-menu {
   &__container {
-    height: 100%;
     padding-left: 80px;
     padding-top: 35px;
     background: $white;
@@ -27,6 +26,7 @@
     display: flex;
     gap: 40px;
     flex-direction: column;
+    margin-bottom: 150px;
   }
   &__nav-item {
     font-family: 'Poppins-Medium', sans-serif;
@@ -61,8 +61,6 @@
     }
   }
   &__footer {
-    position: absolute;
-    bottom: 24px;
     margin-right: 25px;
     display: flex;
     flex-direction: column;
@@ -101,5 +99,12 @@
       background: $primary-color;
       margin-bottom: 27px;
     }
+  }
+}
+
+@media (min-height: 900px) {
+  .side-menu__footer {
+    position: absolute;
+    bottom: 24px;
   }
 }
