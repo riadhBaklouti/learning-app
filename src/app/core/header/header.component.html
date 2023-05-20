@@ -1,1 +1,9 @@
-<p>header works!</p>
+<header class="header" role="banner">
+  <button class="header__logout-btn">Logout<i class="header__logout-btn__icon icon-sign-out"></i></button>
+  <button class="header__notification-btn"><i class="icon-bell"></i></button>
+  <div class="header__search-container">
+    <input class="header__search-input" placeholder="Search for something">
+    <i class="icon-search"></i>
+  </div>
+  <div class="header__today-date">{{today | date:'d MMMM y, EEEE'}}</div>
+</header>

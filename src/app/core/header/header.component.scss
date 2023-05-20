@@ -1,0 +1,69 @@
+@import "../../../style/color";
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+  padding-top: 30px;
+  padding-right: 30px;
+
+  &__logout-btn {
+    height: 54px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background: $primary-color;
+    border-radius: 12px;
+    color: $white;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 26px;
+
+    &__icon {
+      margin-left: 20px;
+    }
+  }
+
+  &__notification-btn {
+    height: 54px;
+    width: 54px;
+    color: $primary-color;
+    background: $light-blue;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  &__search-container {
+    height: 54px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: $primary-color;
+    background: $light-blue;
+    border-radius: 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__search-input {
+    color: $primary-color;
+    background: $light-blue;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-style: normal;
+  }
+
+  &__today-date {
+    align-items: center;
+    display: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: $black;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-style: normal;
+  }
+}
