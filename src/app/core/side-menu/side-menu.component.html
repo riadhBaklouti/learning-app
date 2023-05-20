@@ -1,1 +1,21 @@
-<p>side-menu works!</p>
+<div class="side-menu__container">
+  <nav role="navigation">
+    <header class="side-menu__header">
+      <img src="../../../assets/svg/app-logo.svg" class="side-menu__header__logo" alt="application logo">
+      <span class="side-menu__header__app-name">Learn</span>
+    </header>
+    <ul class="side-menu__nav-items">
+      <li *ngFor="let menuItem of menuItems; let idx = index" (click)="updateSelectedItem(idx)">
+        <a [routerLink]="menuItem.url" class="side-menu__nav-item" [ngClass]="{selected: menuItem.status === MenuItemStatus.SELECTED}">
+          <i  [class]="menuItem.icon" class="side-menu__nav-item__icon"></i>
+          {{menuItem.label}}
+        </a>
+      </li>
+    </ul>
+    <footer class="side-menu__footer">
+      <img src="../../../assets/images/upgrade.png" class="side-menu__footer__illustration" alt="upgrade illustration">
+      <p class="side-menu__footer__text">Upgrade to  for more resources</p>
+      <button class="side-menu__footer__upgrade-btn">Upgrade</button>
+    </footer>
+  </nav>
+</div>

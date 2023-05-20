@@ -1,0 +1,105 @@
+@import "../../../style/color";
+.side-menu {
+  &__container {
+    height: 100%;
+    padding-left: 80px;
+    padding-top: 35px;
+    background: $white;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+    &__logo {
+      height: 47px;
+      width: 47px;
+      margin-right: 27px;
+    }
+    &__app-name {
+      font-family: 'Poppins-SemiBold', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 40px;
+    }
+  }
+  &__nav-items {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  &__nav-item {
+    font-family: 'Poppins-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: $gray-dark-color;
+    display: flex;
+    align-items: center;
+    &__icon {
+      font-size: 28px;
+      line-height: 28px;
+      margin-right: 40px;
+    }
+    &.selected {
+      color: $black;
+      font-family: 'Poppins-SemiBold', sans-serif;
+      &::after {
+        content: "";
+        width: 4px;
+        height: 24px;
+        background: $primary-color;
+        border-radius: 2px;
+        position: absolute;
+        right: 0;
+        margin-right: -2px;
+      }
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: 24px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 17px;
+    background: $background-color;
+    &__illustration {
+      margin-top: -37px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      color: $gray-dark-color;
+      font-family: 'Poppins-Regular', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-bottom: 32px;
+      strong {
+        color: $black;
+      }
+    }
+    &__upgrade-btn {
+      height: 51px;
+      width: 160px;
+      color: $white;
+      font-family: 'Poppins-Medium', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      border-radius: 14px;
+      background: $primary-color;
+      margin-bottom: 27px;
+    }
+  }
+}
