@@ -1,0 +1,6 @@
+export const DASHBOARD_PAGE_URL: string = '/dashboard'
+export const CLASSES_PAGE_URL: string = '/classes'
+export const RESOURCES_PAGE_URL: string = '/resources'
+export const LEARNING_PLAN_PAGE_URL: string = '/learning-plan'
+export const CHAT_PAGE_URL: string = '/chat'
+export const SETTINGS_PAGE_URL: string = '/settings'

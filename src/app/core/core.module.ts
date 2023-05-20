@@ -1,8 +1,9 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {RouterLinkWithHref} from "@angular/router";
 
 
 
@@ -13,7 +14,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgOptimizedImage,
+    RouterLinkWithHref
   ],
   exports: [
     HeaderComponent,

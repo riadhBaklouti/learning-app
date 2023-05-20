@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../assets/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon-settings:before { content: '\e800'; }
+.icon-chat:before { content: '\e801'; }
+.icon-calendar:before { content: '\e802'; }
+.icon-book:before { content: '\e803'; }
+.icon-folder:before { content: '\e804'; }
+.icon-home:before { content: '\e805'; }
