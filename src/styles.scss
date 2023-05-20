@@ -24,11 +24,20 @@ ul {
 button {
   border: none;
 }
+input {
+  border: none;
+  padding: 0;
+  &:focus-visible {
+    outline: none;
+  }
+}
 
 
 @font-face {
   font-family: 'Poppins-Medium';
   src: url('./assets/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-SemiBold';
