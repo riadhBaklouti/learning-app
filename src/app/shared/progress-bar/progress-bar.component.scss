@@ -1,0 +1,15 @@
+@import "../../../style/color";
+.progress-bar {
+  &__container {
+    display: block;
+    height: 5px;
+    background: $gray-light-color;
+    border-radius: 5px;
+  }
+  &__content {
+    height: inherit;
+    width: 50%;
+    background: $primary-color;
+    border-radius: 5px;
+  }
+}
