@@ -1,5 +1,55 @@
-<div class="dashboard__main-container row">
-  <div class="dashboard-section col-8">
+<div class="dashboard__main-container row p-0">
+  <div class="dashboard-section col-8 p-5 pe-4">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="indicator-rectangle indicator-rectangle--red-skin">
+          <div class="col-6 dashboard__welcome-card__text-content">
+            <h1 class="black-title">Welcome back Riadh</h1>
+            <p class="black-text-content">You've learned 80% of your goal this week!<br>
+              Keep it up and improve your results!
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="../../../assets/images/welcome_illustration.png" class="dashboard__welcome-card__illustration"
+                 alt="upgrade illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <div class="indicator-rectangle p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between w-100 mb-5">
+            <h1 class="black-subtitle">Latest results</h1>
+            <a>More<i class="icon-arrow-right ms-3"></i></a>
+          </div>
+          <ul class="w-100">
+            <li *ngFor="let item of [1,2,3,4,5] let i = index">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="dashboard__latest-results__result-text">Unit 5 - <span
+                  class="gray-text-content">Technology</span></p>
+                <app-progress-bar></app-progress-bar>
+              </div>
+              <hr *ngIf="i !== 4">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="indicator-rectangle h-100 p-4 d-flex flex-column justify-content-start">
+          <div class="d-flex justify-content-between w-100 mb-5">
+            <h1 class="black-subtitle">Time Spent on Learning</h1>
+            <a>Last week<i class="icon-arrow-drop-down ms-3"></i></a>
+          </div>
+          <div>
+            <div *ngFor="let day of days">
+              <p>{{day}}</p>
+              <app-progress-bar [horizontal]="false"></app-progress-bar>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="profile-section col-4">
     <app-profile-section class="profile-section__root"></app-profile-section>

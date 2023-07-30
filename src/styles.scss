@@ -5,7 +5,7 @@ body {
   margin: 0;
   background-color: $background-color;
 }
-p {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 a {
@@ -31,6 +31,10 @@ input {
     outline: none;
   }
 }
+//.row {
+//  margin: 0;
+//  --bs-gutter-x: 0;
+//}
 
 .horizontal-flex {
   display: flex;
@@ -41,8 +45,6 @@ input {
 }
 
 .indicator-rectangle {
-  width: 54px;
-  height: 54px;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -50,18 +52,28 @@ input {
   font-size: 17px;
   line-height: 26px;
   font-family: 'Poppins-Medium', sans-serif;
-  &--default-skin {
+  color: $black;
+  background: $white;
+  &--gray-skin {
     background: $background-color;
     color: $black;
   }
   &--red-skin {
     background: $secondary-color-light;
-    color: $secondary-color;
+    h1, h2, h3, h4, h5, h6, i {
+      color: $secondary-color;
+    }
   }
   &--blue-skin {
     background: $light-blue;
-    color: $primary-color;
+    h1, h2, h3, h4, h5, h6, i {
+      color: $primary-color;
+    }
   }
+}
+.small-indicator {
+  width: 54px;
+  height: 54px;
 }
 .gray-text-content {
   color: $gray-dark-color;
@@ -80,6 +92,12 @@ input {
   font-family: 'Poppins-Medium', sans-serif;
   font-size: 17px;
   line-height: 26px;
+}
+.black-title {
+  color: $black;
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 25px;
+  line-height: normal;
 }
 
 

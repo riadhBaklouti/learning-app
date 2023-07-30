@@ -1,9 +1,27 @@
-.dashboard__main-container {
-  height: 100%;
+.dashboard {
+  &__main-container {
+    height: 100%;
+  }
+  &__welcome-card {
+    &__text-content {
+      padding-left: 77px;
+    }
+    &__illustration {
+      margin-top: -3rem;
+      margin-right: 2rem;
+      margin-bottom: 4px;
+    }
+  }
+  &__latest-results {
+    &__result-text {
+      flex: 1;
+    }
+  }
 }
 
 .profile-section {
   position: relative;
+
   &__root {
     position: absolute;
     top: 0;
