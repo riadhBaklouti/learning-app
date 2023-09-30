@@ -1,0 +1,67 @@
+@import "../../../../../../style/color";
+.dashboard {
+  &__profile {
+    width: 100%;
+    min-height: 100%;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-top-left-radius: 20px;
+    &-picture-container {
+      position: relative;
+      width: 35%;
+      margin-bottom: 30px;
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+    &__picture {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      border-radius: 50%;
+      border: $gray-color solid 5px;
+    }
+    &-name {
+      font-family: 'Poppins-Bold', sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+    }
+    &-grade {
+      font-family: 'Poppins-Regular', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $gray-dark-color;
+      margin-bottom: 64px;
+    }
+    &__language-summary {
+      width: 100%;
+      li {
+        margin-bottom: 40px;
+      }
+    }
+    &__reminders {
+      width: 100%;
+      li {
+        margin-bottom: 40px;
+      }
+      &__header {
+        justify-content: space-between;
+        margin-bottom: 28px;
+      }
+      &__icon {
+        height: 25px;
+        width: 21px;
+        color: $gray-dark-color;
+        font-size: 25px;
+      }
+    }
+  }
+}

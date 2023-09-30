@@ -1,0 +1,29 @@
+@import "../../../style/color";
+.language-level {
+  &__container {
+    align-items: center;
+  }
+  &__indicator {
+    margin-right: 20px;
+  }
+  &__info-container {
+    flex: 2;
+  }
+  &__language-name {
+    display: block;
+    color: $black;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  &__language-level {
+    display: block;
+    color: $gray-dark-color;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__progress-bar {
+    width: 120px;
+  }
+}
