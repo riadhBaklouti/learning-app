@@ -21,11 +21,16 @@ $menu-width: 330px;
 }
 
 .app-header {
+  height: 100px;
   width: 100%;
 }
 
 .app-main {
-  height: 100%;
-  position: relative;
+  margin-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 

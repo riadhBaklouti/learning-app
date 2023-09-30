@@ -31,6 +31,10 @@ input {
     outline: none;
   }
 }
+.col-1-5 {
+  flex: 0 0 14.28%;
+  width: 14.28%;
+}
 //.row {
 //  margin: 0;
 //  --bs-gutter-x: 0;
@@ -64,11 +68,35 @@ input {
       color: $secondary-color;
     }
   }
+  &--dark-red-skin {
+    background: $secondary-color;
+    h1, h2, h3, h4, h5, h6, i, p {
+      color: $white;
+    }
+  }
   &--blue-skin {
     background: $light-blue;
     h1, h2, h3, h4, h5, h6, i {
       color: $primary-color;
     }
+  }
+  &--dark-blue-skin {
+    background: $primary-color;
+    h1, h2, h3, h4, h5, h6, i {
+      color: $white;
+    }
+  }
+  &--purple-skin {
+    background: $light-purple;
+    color: $white;
+  }
+  &--dark-purple-skin {
+    background: $dark-purple;
+    color: $white;
+  }
+  &--semi-transparent-skin {
+    background: $semi-transparent-white;
+    color: $white;
   }
 }
 .small-indicator {
@@ -98,6 +126,12 @@ input {
   font-family: 'Poppins-Bold', sans-serif;
   font-size: 25px;
   line-height: normal;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  width: 0;
 }
 
 

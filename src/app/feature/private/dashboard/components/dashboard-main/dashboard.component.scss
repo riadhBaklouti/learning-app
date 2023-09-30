@@ -1,6 +1,7 @@
 .dashboard {
   &__main-container {
     height: 100%;
+    flex-wrap: nowrap;
   }
   &__welcome-card {
     &__text-content {
@@ -17,10 +18,23 @@
       flex: 1;
     }
   }
+  &__time-spent {
+    &__progress-bar {
+      height: 170px;
+    }
+    &__chip {
+      height: 12px;
+      width: 12px;
+    }
+    &__indicator-container {
+      width: fit-content;
+    }
+  }
 }
 
 .profile-section {
   position: relative;
+  overflow-y: scroll;
 
   &__root {
     position: absolute;
@@ -32,4 +46,5 @@
 }
 
 .dashboard-section {
+  overflow-y: scroll;
 }
