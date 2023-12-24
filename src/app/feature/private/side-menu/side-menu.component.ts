@@ -7,7 +7,7 @@ import {
   LEARNING_PLAN_PAGE_URL,
   RESOURCES_PAGE_URL,
   SETTINGS_PAGE_URL
-} from "../utils/navigation.utils";
+} from "../../../core/utils/navigation.utils";
 
 @Component({
   selector: 'app-side-menu',

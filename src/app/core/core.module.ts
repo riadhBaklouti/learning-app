@@ -1,7 +1,5 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import { SideMenuComponent } from './side-menu/side-menu.component';
-import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {RouterLinkWithHref} from "@angular/router";
 
@@ -9,19 +7,13 @@ import {RouterLinkWithHref} from "@angular/router";
 
 @NgModule({
   declarations: [
-    SideMenuComponent,
-    HeaderComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     CommonModule,
     NgOptimizedImage,
     RouterLinkWithHref
   ],
-  exports: [
-    HeaderComponent,
-    SideMenuComponent
-  ]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() coreModule: CoreModule) {
