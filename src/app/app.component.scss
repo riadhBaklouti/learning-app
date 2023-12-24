@@ -1,6 +1,7 @@
 @import "../style/color";
 $menu-width: 330px;
 .side-menu {
+
   height: inherit;
   width: $menu-width;
   position: absolute;
@@ -21,6 +22,16 @@ $menu-width: 330px;
 }
 
 .app-header {
+  height: 100px;
   width: 100%;
+}
+
+.app-main {
+  margin-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 

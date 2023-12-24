@@ -1,1 +1,116 @@
-<p>dashboard works!</p>
+<div class="dashboard__main-container row p-0">
+  <div class="dashboard-section scrollbar-hidden col-8 p-5 pe-4">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="indicator-rectangle indicator-rectangle--red-skin">
+          <div class="col-6 dashboard__welcome-card__text-content">
+            <h1 class="black-title">Welcome back Riadh</h1>
+            <p class="black-text-content">You've learned 80% of your goal this week!<br>
+              Keep it up and improve your results!
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="../../../assets/images/welcome_illustration.png" class="dashboard__welcome-card__illustration"
+                 alt="upgrade illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-5">
+        <div class="indicator-rectangle p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between w-100 mb-5">
+            <h1 class="black-subtitle">Latest results</h1>
+            <a>More<i class="icon-arrow-right ms-3"></i></a>
+          </div>
+          <ul class="w-100">
+            <li *ngFor="let item of [1,2,3,4,5] let i = index">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="dashboard__latest-results__result-text">Unit 5 - <span
+                  class="gray-text-content">Technology</span></p>
+                <app-progress-bar></app-progress-bar>
+              </div>
+              <hr *ngIf="i !== 4">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="indicator-rectangle h-100 p-4 d-flex flex-column justify-content-start">
+          <div class="d-flex justify-content-between w-100 mb-5">
+            <h1 class="black-subtitle">Time Spent on Learning</h1>
+            <a>Last week<i class="icon-arrow-drop-down ms-3"></i></a>
+          </div>
+          <div class="row w-100 mb-4">
+            <div *ngFor="let day of days" class="col-1-5 d-flex flex-column align-items-center">
+              <p class="gray-text-content mb-4">{{day}}</p>
+              <app-progress-bar class="dashboard__time-spent__progress-bar" [horizontal]="false"></app-progress-bar>
+            </div>
+          </div>
+          <div class="row w-100 justify-content-center">
+            <div class="col-3 d-flex align-items-center dashboard__time-spent__indicator-container">
+              <span
+                class="dashboard__time-spent__chip indicator-rectangle indicator-rectangle--dark-red-skin me-4"></span>
+              <p class="gray-text-content">Vocabuary</p>
+            </div>
+            <div class="col-3 d-flex align-items-center dashboard__time-spent__indicator-container">
+              <span
+                class="dashboard__time-spent__chip indicator-rectangle indicator-rectangle--dark-blue-skin me-4"></span>
+              <p class="gray-text-content">Grammar</p>
+            </div>
+            <div class="col-3 d-flex align-items-center dashboard__time-spent__indicator-container">
+              <span class="dashboard__time-spent__chip indicator-rectangle indicator-rectangle--blue-skin me-4"></span>
+              <p class="gray-text-content">Listening</p>
+            </div>
+            <div class="col-3 d-flex align-items-center dashboard__time-spent__indicator-container">
+              <span class="dashboard__time-spent__chip indicator-rectangle indicator-rectangle--gray-skin me-4"></span>
+              <p class="gray-text-content">Writing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="d-flex justify-content-between w-100 mb-4">
+        <h1 class="black-subtitle">Your cources</h1>
+        <a>More<i class="icon-arrow-right ms-3"></i></a>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="indicator-rectangle indicator-rectangle--dark-purple-skin p-3 justify-content-between align-items-end">
+            <div class="indicator-rectangle indicator-rectangle--semi-transparent-skin small-indicator me-3">B2</div>
+            <div>
+              <p>Business English</p>
+              <p>Grammar</p>
+            </div>
+            <i class="icon-arrow-right ms-3"></i>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="indicator-rectangle indicator-rectangle--purple-skin p-3 justify-content-between align-items-end">
+            <div class="indicator-rectangle indicator-rectangle--semi-transparent-skin small-indicator me-3">B2</div>
+            <div>
+              <p>Common English</p>
+              <p>Phrasal Verbs</p>
+            </div>
+            <i class="icon-arrow-right ms-3"></i>
+          </div>
+        </div>
+        <div class="col-4">
+          <div
+            class="indicator-rectangle indicator-rectangle--dark-red-skin  p-3 justify-content-between align-items-end">
+              <div class="indicator-rectangle indicator-rectangle--semi-transparent-skin small-indicator me-3">C1</div>
+              <div>
+                <p>Business Spanish</p>
+                <p>Vocabulary</p>
+              </div>
+              <i class="icon-arrow-right ms-3"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="profile-section scrollbar-hidden col-4">
+    <app-profile-section class="profile-section__root scrollbar-hidden"></app-profile-section>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.dashboard {
+  &__main-container {
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+  &__welcome-card {
+    &__text-content {
+      padding-left: 77px;
+    }
+    &__illustration {
+      margin-top: -3rem;
+      margin-right: 2rem;
+      margin-bottom: 4px;
+    }
+  }
+  &__latest-results {
+    &__result-text {
+      flex: 1;
+    }
+  }
+  &__time-spent {
+    &__progress-bar {
+      height: 170px;
+    }
+    &__chip {
+      height: 12px;
+      width: 12px;
+    }
+    &__indicator-container {
+      width: fit-content;
+    }
+  }
+}
+
+.profile-section {
+  position: relative;
+  overflow-y: scroll;
+
+  &__root {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    width: 100%;
+  }
+}
+
+.dashboard-section {
+  overflow-y: scroll;
+}

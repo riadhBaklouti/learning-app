@@ -1,1 +1,3 @@
-<p>progress-bar works!</p>
+<div [ngClass]="horizontal ? 'progress-bar__container--horizontal' : 'progress-bar__container--vertical'" class="progress-bar__container">
+  <div [ngClass]="horizontal ? 'progress-bar__content--horizontal' : 'progress-bar__content--vertical'" class="progress-bar__content"></div>
+</div>
