@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------[MAIN STYLESHEET]PROJECT:	Portio HTMLVERSION:	1.0.0-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
+.landing-container {
+  background: #fff;
+}
+
+.section {
+  padding: 100px 0
+}
+
+
+@-webkit-keyframes move_top {
+  0%,100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(15px)
+  }
+}
+
+@keyframes move_top {
+  0%,100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(15px)
+  }
+}

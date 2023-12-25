@@ -1,0 +1,146 @@
+.navbar {
+  padding: 40px 0;
+  background: transparent;
+  transition: all .3s ease;
+  .app-name {
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 40px;
+    margin-left: 27px;
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    background:#fff
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    padding:15px 20px;
+    margin: 10px 10px 0;
+    border-radius: 5px
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar .navbar-brand img {
+    width:80%
+  }
+}
+
+.navbar .main-navigation {
+  margin: 0 auto
+}
+
+.navbar .main-navigation .nav-item .nav-link {
+  color: #282f49;
+  font-family: "Poppins",sans-serif;
+  padding: 0 15px;
+  transition: all .3s ease;
+  font-weight: 500
+}
+
+.navbar .main-navigation .nav-item .nav-link:hover {
+  color: #5d78ff
+}
+
+@media(max-width: 991px) {
+  .navbar .main-navigation .nav-item .nav-link {
+    text-align:center;
+    padding: 15px 0;
+    cursor: pointer
+  }
+}
+
+.navbar .main-navigation .nav-item .active {
+  color: #5d78ff
+}
+
+.navbar .hire_button {
+  background: #5d78ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+  transform: scale(1)
+}
+
+.navbar .hire_button:hover {
+  background: #425fee;
+  box-shadow: 0 8px 20px rgba(56,87,241,0.3);
+  transform: scale(1.03)
+}
+
+@media(max-width: 991px) {
+  .navbar .hire_button {
+    text-align:center
+  }
+}
+
+.navbar.nav__color__change {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 10px 20px 0 rgba(50,65,141,0.1)
+}
+
+@media(max-width: 991px) {
+  .navbar.nav__color__change {
+    padding:15px 20px
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar .navbar-toggler {
+    outline:0;
+    padding: 0
+  }
+
+  .navbar .navbar-toggler-icon {
+    height: 2px;
+    width: 25px;
+    transition: all .2s;
+    background: #5d78ff;
+    display: block
+  }
+
+  .navbar .navbar-toggler-icon:not(:last-child) {
+    margin-bottom: 5px
+  }
+
+  .navbar .navbar-toggler-icon:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%
+  }
+
+  .navbar .navbar-toggler-icon:nth-child(2) {
+    opacity: 0;
+    filter: alpha(opacity=0)
+  }
+
+  .navbar .navbar-toggler-icon:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%
+  }
+
+  .navbar .navbar-toggler.collapsed .navbar-toggler-icon:nth-child(1) {
+    transform: rotate(0)
+  }
+
+  .navbar .navbar-toggler.collapsed .navbar-toggler-icon:nth-child(2) {
+    opacity: 1;
+    filter: alpha(opacity=1)
+  }
+
+  .navbar .navbar-toggler.collapsed .navbar-toggler-icon:nth-child(3) {
+    transform: rotate(0)
+  }
+}
